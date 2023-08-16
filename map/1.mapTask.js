@@ -30,17 +30,17 @@ const p = [
     },
   ];
   
-  const updatedP = p.map(person => {
-    if (person.isActive) {
-      return {
-        ...person,
-        isActive: "available"
-      };
-    } else {
-      return {
-        ...person,
-        isActive: "not available"
-      };
+   const updatedP = p.map((item) => {
+    if (item.isActive){
+        return{
+            ...item,
+            isActive:"available"
+        }
+    }else{
+        return{
+            ...item,
+            isActive:"not available"
+        }
     }
   });
-  console.log(updatedP);
+console.log(updatedP);
