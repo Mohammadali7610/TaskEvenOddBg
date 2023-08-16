@@ -30,17 +30,33 @@ const p = [
     },
   ];
   
+<<<<<<< Updated upstream
    const updatedP = p.map((item) => {
     if (item.isActive){
         return{
             ...item,
             isActive:"available"
+=======
+  const updatedP = p.map((item) => {
+    if (item.isActive){
+        return{
+            ...item,
+            isActive:"Available"
+>>>>>>> Stashed changes
         }
     }else{
         return{
             ...item,
+<<<<<<< Updated upstream
             isActive:"not available"
         }
     }
   });
 console.log(updatedP);
+=======
+            isActive:"Not Available"
+        }
+    }
+  });
+console.log(updatedP);
+>>>>>>> Stashed changes
