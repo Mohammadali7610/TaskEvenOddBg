@@ -32,6 +32,6 @@ const products = [
   ]
   
   
-  const filteredProducts = products.filter(product => product.name === "Smartphone" && product.category === "Electronics");
+  const filteredProducts = products.filter(product => product.price > 500 && product.category === "Electronics");
   
   console.log(filteredProducts);
